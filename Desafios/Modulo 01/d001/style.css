@@ -1,0 +1,17 @@
+body {
+ font-size: large;
+ font: Arial;
+ align-items:
+ width: 50vw ;
+ display:grid;
+}
+.p { font-size: 20pt;
+    font: bold;
+    align-items: center;
+}
+.p1 {
+    font: bold;
+    font-size: 20pt;
+    align-items: center;
+
+}

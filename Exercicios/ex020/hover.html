@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div:hover {
+            color: red;
+        }
+        div>p{
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 200px;
+        }         
+
+        
+
+    </style>
+</head>
+<body> <H1>Exemplo de hover</H1>
+    <p>Passe o mouse sobre p texto abaixo </p>
+    <div>Passe aqui
+        <p>Texto escondido</p>
+    </div>
+    <p>voce viu ?</p>
+
+</body>
+</html>
