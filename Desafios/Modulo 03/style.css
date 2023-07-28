@@ -3,77 +3,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
 :root {
---font-srira:'Sriracha', cursive;
---font-passione:'Passion One', cursive;
+    --font-srira: 'Sriracha', cursive;
+    --font-passione: 'Passion One', cursive;
 
 
 }
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-html, body{ 
+html,
+body {
     min-height: 100vh;
     background-color: darkgray;
 
 }
-header{
-   
+
+header {
+
     background-color: black;
     color: white;
     text-align: center;
 }
-header > h1{ font-family: var(--font-passione);
+
+header>h1 {
+    font-family: var(--font-passione);
     padding-top: 50px;
-    font-variant:small-caps ;
+    font-variant: small-caps;
     font-size: 10vw;
 }
 
-header > p{
-    padding-bottom:50px ;
+header>p {
+    padding-bottom: 50px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-section{
-    font-family: var(--font-srira),verdana;
+section {
+    font-family: var(--font-srira), verdana;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 60px;
-    font-size:3.5vw ;
+    font-size: 3.5vw;
 }
 
-section.imagem > p {
+section.imagem>p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.155);
-    
+    background-color: rgba(0, 0, 0, 0.702);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.494);
+
+}
+
+section>p {
+    padding-bottom: 2em;
 }
 
 
-section.normal{
+section.normal {
     background-color: white;
     color: black;
 }
-section.imagem{
-   
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.649);
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.227);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.478);
+    background-size: cover;
+    background-attachment: fixed;
+
+
 }
 
+#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: center right;
+}
 
+#img02 {
+    background-position: top right;
+  
+    background-image: url(imagens/background002.jpg);
+}
 
 
 
