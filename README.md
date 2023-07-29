@@ -3,5 +3,5 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus Repositorios.
 
-Para acessar os sites sem precisar baixat.
+Para acessar os sites sem precisar baixar.
 https://wemersond3v.github.io/Html-css/
