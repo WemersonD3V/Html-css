@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Meu primeiro Formulario</h1>
+
+    <!-- a propidade method get e post pode espor dados e deve ser usado somente em dados nao sensiveis ex:pesquisas e nao deve ser usadas em senhas e dados de cartão -->
+
+    <form method="post"  action="cadastro.js" autocomplete="off">
+
+        <!-- a tag label com o parametro for deve ser acompanhada com o id do input -->
+
+        <!-- a tag label e muito importante para relacionar o nome do input -->
+        <><label  for="inome">Nome: </label><input  type="text" name="nome" id="inome"> </p>
+         
+        <p><label for="isobre">Sobrenome:</label> <input type="text" name="sobre" id="isobre"></>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+
+ 
+</body>
+</html>
