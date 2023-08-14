@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadrastro.js" method="get" autocomplete="on">
+        <fieldset> <!--   a tag fieldset e importante para separar grupos de dadps ex: famailia, pessoal, -->
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="" id="iname" minlength="6" maxlength="18" required >
+            </p>
+            <p>  <label for="iemail">E-mail</label>
+                <input type="email" name="" id="iemail" autocomplete="email" required >
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="" id="itel" required pattern="^\(\d{2}\)\d{4}-\d{4}$" >
+            </p>
+        </fieldset>
+        <!-- Estudar masi sobre RegEX -->
+        <p>
+          <input type="reset" value="Limpar">
+          <input type="submit" value="Enviar" >
+        </p>
+
+    </form>
+    
+</body>
+</html>

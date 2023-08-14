@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1> Exemplo de formulario</h1>
+    <form action="cadrastro.js">
+        <!-- uma maneira de fazer com que um fique marcado e o outro não e deixar o input radio com o masmo name 'sexo'  -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isman"><label for="isman">Masculino</label>
+            <input type="radio" name="sexo" id="isfemi"><label for="isfemi">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input checked type="checkbox" name="Futebol" id="ifut"> 
+            <label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="Basket" id="ibask"> <label for="ibask">Basket</label> <br>
+            <input type="checkbox" name="Natação" id="inat"> <label for="inat">Natação</label> <br>
+            <input type="checkbox" name="Tenis" id="iten"> <label for="iten">Tênis</label> <br>
+
+           
+
+        </fieldset>
+ <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+
+    </form>
+</body>
+</html>
