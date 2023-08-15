@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <p>
+            <label for="num1">Número 1:</label>
+            <input type="number" name="numero" id="num1" min="0" max="50" required oninput="isaida.innerHTML=Number(num1.value) + Number(num2.value)  " >
+        </p>
+        <p>
+            <label for="num2">Número 2:</label>
+            <input type="number" name="numero2" id="num2" min="0" max="50" required oninput="isaida.innerHTML=Number(num1.value)+ Number(num2.value)">
+        </p>
+        <p> 
+            <label for="isaida">Saida:</label>
+            <output id="isaida" >0</output>
+
+
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>

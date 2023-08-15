@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadrastro.js" method="post" >
+        <p>
+            <label for="iano">Em que ano você nasceu ?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000" oninput="calc()" >
+
+        </p>
+        <p> <label for="isaida">Sua idade é :</label>
+            <output id="isaida" ></output>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+        <script>
+            function calc(){
+                let ano = document.querySelector('#iano')
+                let visor = document.querySelector('#isaida')
+                let anoAtual = new Date().getFullYear()
+                let idade = anoAtual - Number(ano.value);
+
+                isaida.innerHTML=`${idade}`
+                console.log(idade, anoAtual)
+            }
+        </script>
+
+
+
+    </form>
+    
+</body>
+</html>
