@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            background-color: yellow;
+            padding: 20px;
+            margin: 30px;
+           
+        }
+    </style>
 </head>
 <body>
-    <form action="cadrastro.js" method="post" >
+    <form id="iform" action="cadrastro.js" method="post" >
         <p>
             <label for="iano">Em que ano você nasceu ?</label>
-            <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000" oninput="calc()" >
+            <input type="number" name="ano" id="iano" min="1900" max="2023"  oninput="calc()" >
 
         </p>
         <p> <label for="isaida">Sua idade é :</label>
@@ -23,6 +31,7 @@
         </p>
         
         <script>
+            iano.focus()
             function calc(){
                 let ano = document.querySelector('#iano')
                 let visor = document.querySelector('#isaida')
@@ -32,6 +41,10 @@
                 isaida.innerHTML=`${idade}`
                 console.log(idade, anoAtual)
             }
+
+
+            let estilo = document.getElementById('iform')
+            estilo.style.backgroundColor="lightblue"
         </script>
 
 
